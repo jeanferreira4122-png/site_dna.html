@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNA — O código da vida</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#07111f;color:#eef6ff;line-height:1.6}
+    header{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;
+      padding:40px 20px;background:radial-gradient(circle at 50% 20%,#164b7a 0,#0b2037 35%,#07111f 75%)}
+    .hero{max-width:900px}
+    .dna{font-size:72px;margin-bottom:10px;filter:drop-shadow(0 0 20px #39bdf8)}
+    h1{font-size:clamp(42px,8vw,78px);letter-spacing:2px}
+    .hero p{font-size:20px;color:#b8d5eb;margin:18px auto 30px;max-width:680px}
+    .btn{display:inline-block;padding:13px 24px;border-radius:30px;background:#24a8e8;color:white;text-decoration:none;font-weight:bold}
+    nav{position:sticky;top:0;z-index:5;background:#07111feF;border-bottom:1px solid #17334d;padding:14px;text-align:center}
+    nav a{color:#cce8fa;text-decoration:none;margin:0 12px;font-size:14px}
+    main{max-width:1050px;margin:auto;padding:70px 20px}
+    section{margin-bottom:75px}
+    .tag{color:#35bdf4;text-transform:uppercase;font-size:13px;font-weight:bold;letter-spacing:2px}
+    h2{font-size:36px;margin:8px 0 20px}
+    .intro{color:#b9cddd;max-width:800px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:28px}
+    .card{background:#0d1c2d;border:1px solid #19364f;border-radius:18px;padding:24px;transition:.2s}
+    .card:hover{transform:translateY(-4px);border-color:#2caeea}
+    .card h3{margin-bottom:8px;color:#72d2ff}
+    .dna-structure{display:flex;justify-content:center;align-items:center;gap:25px;margin:35px 0;flex-wrap:wrap}
+    .strand{display:flex;flex-direction:column;gap:10px}
+    .base{width:90px;padding:10px;border-radius:10px;text-align:center;font-weight:bold}
+    .a{background:#1769aa}.t{background:#9b3c70}.c{background:#23865b}.g{background:#9b6b20}
+    .link{width:45px;height:4px;background:#7891a5}
+    .fact{background:linear-gradient(135deg,#0e3048,#102039);border-radius:22px;padding:30px;border:1px solid #20506e}
+    footer{text-align:center;padding:35px 20px;color:#89a6ba;border-top:1px solid #17334d}
+    @media(max-width:600px){nav a{margin:0 5px;font-size:12px}.dna{font-size:58px}}
+  </style>
+</head>
+<body>
+<header id="inicio">
+  <div class="hero">
+    <div class="dna">🧬</div>
+    <h1>DNA</h1>
+    <p>O DNA é a molécula que armazena as informações genéticas dos seres vivos. Descubra como ele funciona e por que é chamado de código da vida.</p>
+    <a class="btn" href="#o-que-e">Explorar</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#o-que-e">O que é?</a>
+  <a href="#estrutura">Estrutura</a>
+  <a href="#bases">Bases</a>
+  <a href="#funcoes">Funções</a>
+  <a href="#curiosidades">Curiosidades</a>
+</nav>
+
+<main>
+<section id="o-que-e">
+  <div class="tag">01 — Conceito</div>
+  <h2>O que é DNA?</h2>
+  <p class="intro">DNA significa ácido desoxirribonucleico. Ele contém as instruções necessárias para o desenvolvimento, funcionamento e reprodução dos organismos. Em células eucarióticas, a maior parte do DNA fica no núcleo celular.</p>
+</section>
+
+<section id="estrutura">
+  <div class="tag">02 — Estrutura</div>
+  <h2>Uma dupla hélice</h2>
+  <p class="intro">A molécula de DNA possui duas fitas enroladas em uma estrutura conhecida como dupla hélice. As duas fitas são unidas pelo pareamento entre bases nitrogenadas.</p>
+  <div class="dna-structure">
+    <div class="strand">
+      <div class="base a">A</div><div class="base c">C</div><div class="base g">G</div><div class="base t">T</div>
+    </div>
+    <div class="strand">
+      <div class="link"></div><div class="link"></div><div class="link"></div><div class="link"></div>
+    </div>
+    <div class="strand">
+      <div class="base t">T</div><div class="base g">G</div><div class="base c">C</div><div class="base a">A</div>
+    </div>
+  </div>
+</section>
+
+<section id="bases">
+  <div class="tag">03 — Bases nitrogenadas</div>
+  <h2>As quatro letras do código</h2>
+  <div class="cards">
+    <div class="card"><h3>A — Adenina</h3><p>Forma par com a timina.</p></div>
+    <div class="card"><h3>T — Timina</h3><p>Forma par com a adenina.</p></div>
+    <div class="card"><h3>C — Citosina</h3><p>Forma par com a guanina.</p></div>
+    <div class="card"><h3>G — Guanina</h3><p>Forma par com a citosina.</p></div>
+  </div>
+</section>
+
+<section id="funcoes">
+  <div class="tag">04 — Funções</div>
+  <h2>Por que o DNA é importante?</h2>
+  <div class="cards">
+    <div class="card"><h3>🧬 Armazenamento</h3><p>Guarda informações genéticas que podem ser transmitidas entre gerações.</p></div>
+    <div class="card"><h3>🔬 Produção de proteínas</h3><p>As informações do DNA ajudam a orientar a produção de proteínas pelas células.</p></div>
+    <div class="card"><h3>👨‍👩‍👧 Hereditariedade</h3><p>Contribui para a transmissão de características biológicas dos pais para os descendentes.</p></div>
+  </div>
+</section>
+
+<section id="curiosidades">
+  <div class="tag">05 — Curiosidades</div>
+  <h2>Você sabia?</h2>
+  <div class="fact">
+    <p>O DNA de uma célula humana, se fosse esticado, teria cerca de 2 metros de comprimento. Mesmo assim, ele precisa caber em uma estrutura microscópica. Para isso, o DNA é cuidadosamente compactado e organizado dentro da célula.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>🧬 DNA — O código da vida</p>
+  <p>Projeto educativo sobre genética</p>
+</footer>
+</body>
+</html>
